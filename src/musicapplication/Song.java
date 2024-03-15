@@ -10,13 +10,11 @@ package musicapplication;
  */
 public class Song {
     private String title;
-    private String artist;
     private String genre;
     
     
     public Song(String title, String artist, String genre){
         this.title = title;
-        this.artist = artist;
         this.genre = genre;
     }
 
@@ -28,14 +26,6 @@ public class Song {
         this.title = title;
     }
 
-    public String getArtist() {
-        return artist;
-    }
-
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
-
     public String getGenre() {
         return genre;
     }
@@ -44,5 +34,8 @@ public class Song {
         this.genre = genre;
     }
     
-    
+    @Override
+    public String toString() {
+        return "Song: " + title + " Genre: " + genre;
+    }
 }

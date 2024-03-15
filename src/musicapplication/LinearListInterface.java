@@ -15,12 +15,11 @@ public interface LinearListInterface {
     public int size();
 
     public Song get(int iIndex);
+    
+    public void add(int iIndex, Song inSong);
 
     public void remove(int iIndex);
 
-    public void add(int iIndex, Song song);
-
     public String printList();
 
-    public String printListBwd();
 }

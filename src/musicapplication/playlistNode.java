@@ -13,35 +13,35 @@ public class playlistNode {
     private playlistNode next;
     private playlistNode prev;
     
-    public playlistNode(Song song){
+    public playlistNode(Song inSong, playlistNode inNext, playlistNode inPrev){
         this.song = song;
-        this.next = null;
-        this.prev = null;
-    }
-
-    public Song getSong() {
-        return song;
-    }
-
-    public void setSong(Song song) {
-        this.song = song;
+        this.next = inNext;
+        this.prev = inPrev;
     }
 
     public playlistNode getNext() {
         return next;
     }
 
-    public void setNext(playlistNode next) {
-        this.next = next;
+    public void setNext(playlistNode inNext) {
+        next = inNext;
     }
 
     public playlistNode getPrev() {
         return prev;
     }
 
-    public void setPrev(playlistNode prev) {
-        this.prev = prev;
+    public void setPrev(playlistNode inPrev) {
+        prev = inPrev;
     }
     
+    public Song getSong() {
+        return song;
+    }
+
+    public void setSong(Song inSong){
+        song = inSong;
+        this.song = inSong;
+    }
     
 }
