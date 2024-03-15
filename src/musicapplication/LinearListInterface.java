@@ -9,12 +9,18 @@ package musicapplication;
  * @author erink
  */
 public interface LinearListInterface {
+
     public boolean isEmpty();
+
     public int size();
-    public Object get(int iIndex);
+
+    public Song get(int iIndex);
+
     public void remove(int iIndex);
-    public void add(Object element, int iIndex);
-    public void add(Object element);
+
+    public void add(int iIndex, Song song);
+
     public String printList();
+
     public String printListBwd();
 }
