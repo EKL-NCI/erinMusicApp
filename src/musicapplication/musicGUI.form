@@ -44,65 +44,76 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jScrollPane4" max="32767" attributes="0"/>
-                              <Component id="songCountBtn" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="songCountBtn" min="-2" pref="159" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="removeAllBtn" min="-2" pref="159" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="removeBtn" min="-2" pref="159" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jScrollPane4" min="-2" pref="498" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace pref="83" max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="nameTxt" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
-                                      <Component id="sNameLbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="sNameLbl" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="nameTxt" min="-2" pref="156" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="sgenreLbl" min="-2" max="-2" attributes="0"/>
+                                              <Component id="artistLbl" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="artistTxt" max="32767" attributes="0"/>
+                                              <Component id="genreTxt" pref="156" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="sgenreLbl" min="-2" max="-2" attributes="0"/>
-                                      <Component id="genreTxt" min="-2" pref="156" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Component id="addBtn" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="moveBtn" pref="101" max="32767" attributes="0"/>
-                                      <Component id="shuffleBtn" max="32767" attributes="0"/>
-                                  </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="likedPlLbl" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="playlistLbl" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="344" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jScrollPane1" min="-2" pref="318" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="removeBtn" max="32767" attributes="0"/>
-                                      <Component id="removeAllBtn" max="32767" attributes="0"/>
-                                  </Group>
+                                  <Component id="jScrollPane2" min="-2" pref="414" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="displayBtn" min="-2" pref="159" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="moveBtn" min="-2" pref="159" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="shuffleBtn" min="-2" pref="159" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="likedScroll" alignment="0" min="-2" pref="201" max="-2" attributes="0"/>
-                              <Component id="likedPlLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="genre1Scroll" alignment="0" min="-2" pref="201" max="-2" attributes="0"/>
-                              <Component id="genrePlLbl" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="genre2PlLbl" min="-2" max="-2" attributes="0"/>
-                              <Component id="genre2Scroll" min="-2" pref="201" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace pref="42" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-              </Group>
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="344" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -111,66 +122,56 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="likedPlLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="genrePlLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="genre2PlLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="likedScroll" pref="307" max="32767" attributes="0"/>
-                      <Component id="genre1Scroll" alignment="0" max="32767" attributes="0"/>
-                      <Component id="genre2Scroll" alignment="0" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="sgenreLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="sNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="playlistLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="songCountBtn" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="nameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="genreTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="addBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="jScrollPane2" min="-2" pref="319" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="moveBtn" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="removeAllBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="nameTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sNameLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="genreTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sgenreLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="removeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="artistTxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="artistLbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="addBtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="319" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="displayBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="moveBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="shuffleBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="songCountBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="removeAllBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="removeBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jScrollPane4" min="-2" pref="112" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JScrollPane" name="genre1Scroll">
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-        </Container>
-        <Container class="javax.swing.JScrollPane" name="genre2Scroll">
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-        </Container>
-        <Container class="javax.swing.JScrollPane" name="likedScroll">
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-        </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane4">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -221,21 +222,33 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Move Last"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="moveBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="removeBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Remove Last"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="removeAllBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Remove All"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeAllBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="songCountBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Number of Songs"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="songCountBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="likedPlLbl">
           <Properties>
@@ -245,20 +258,12 @@
             <Property name="text" type="java.lang.String" value="Liked Songs"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="genrePlLbl">
+        <Component class="javax.swing.JLabel" name="playlistLbl">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Genre 1:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="genre2PlLbl">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Genre 2:"/>
+            <Property name="text" type="java.lang.String" value="Playlists"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="shuffleBtn">
@@ -272,6 +277,54 @@
               <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Music Manager"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="displayBtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Display"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="displayBtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="likedDisplay">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="playlistDisplay">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JTextField" name="artistTxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="artistLbl">
+          <Properties>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Artist"/>
           </Properties>
         </Component>
       </SubComponents>
