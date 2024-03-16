@@ -8,95 +8,99 @@ package musicapplication;
  *
  * @author erink
  */
-public class playlist implements LinearListInterface{
-   
-    private playlistNode head;
-    private playlistNode last;
-    private playlistNode current;
-    private int iSize;
-    
-    playlist(){
+public class Playlist implements LinearListInterface {
+    private PlaylistNode head;
+    private PlaylistNode last;
+    private int size;
+
+    public Playlist() {
         head = null;
         last = null;
-        current = head;
-        iSize = 0;
+        size = 0;
     }
-    
-    public boolean isEmpty(){
-        return (iSize == 0);
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
     }
-    
-    public int size(){
-        return iSize;
+
+    @Override
+    public int size() {
+        return size;
     }
-    
-    private void setCurrent(int inIndex){
-        current = head;
-        for(int iCount = 1; iCount < inIndex; iCount++){
-            current = current.getNext();
+
+    private PlaylistNode getNodeAt(int index) {
+        PlaylistNode currentNode = head;
+        for (int count = 1; count < index; count++) {
+            currentNode = currentNode.getNext();
         }
+        return currentNode;
     }
-    
-    public Song get(int iIndex) {
-        setCurrent(iIndex);
-        return current.getSong();
+
+    @Override
+    public Song get(int index) {
+        if (index >= 1 && index <= size) {
+            PlaylistNode currentNode = getNodeAt(index);
+            return currentNode.getSong();
+        }
+        return null;
     }
-    
-    public void add(int iIndex, Song inSong){
-        playlistNode newNode = new playlistNode(inSong, null, null);
-        
-        if(iSize == 0){
+
+    @Override
+    public void add(int index, Song song) {
+        if (index < 1 || index > size + 1) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
+        PlaylistNode newNode = new PlaylistNode(song);
+        if (isEmpty()) {
             head = newNode;
             last = newNode;
-        }else{
-            if (iIndex == 1){
-                newNode.setNext(head);
-                head.setPrev(newNode);
-                head = newNode;
-            }else if(iIndex == iSize + 1){
-                newNode.setPrev(last);
-                last.setNext(newNode);
-                last = newNode;
-            }else{
-                setCurrent(iIndex);
-                newNode.setNext(current);
-                playlistNode prev = current.getPrev();
-                newNode.setPrev(prev);
-                prev.setNext(newNode);
-                current.setPrev(newNode);
-            }
+        } else if (index == 1) {
+            newNode.linkNext(head); // Use linkNext method
+            head = newNode;
+        } else if (index == size + 1) {
+            last.linkNext(newNode); // Use linkNext method
+            last = newNode;
+        } else {
+            PlaylistNode currentNode = getNodeAt(index);
+            newNode.linkNext(currentNode); // Use linkNext method
+            currentNode.getPrev().linkNext(newNode); // Use linkNext method
         }
-        iSize++;
+        size++;
     }
-    
-    public void remove(int iIndex){
-        if(iSize > 0){
-            if(iIndex == 1){
-                head = head.getNext();
-                head.setPrev(null);
-            }else if(iIndex == iSize){
-                last = last.getPrev();
-                last.setNext(null);
-            }else{
-                setCurrent(iIndex);
-                playlistNode prev = current.getPrev();
-                playlistNode next = current.getNext();
-                prev.setNext(next);
-                next.setPrev(prev);
+
+
+    @Override
+    public void remove(int index) {
+        if (index < 1 || index > size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+        }
+        PlaylistNode toRemove = getNodeAt(index);
+        if (toRemove == head) {
+            head = toRemove.getNext();
+            if (head != null) {
+                head.unlinkPrev(); // Use unlinkPrev method
+            } else {
+                last = null; // List is now empty
             }
-            current = null;
-            iSize--;
-        }else{
-            System.out.println("This playlist is Empty.");
+        } else if (toRemove == last) {
+            last = toRemove.getPrev();
+            if (last != null) {
+                last.unlinkNext(); // Use unlinkNext method
+            } else {
+                head = null; // List is now empty
+            }
+        } else {
+            toRemove.getPrev().linkNext(toRemove.getNext()); // Use linkNext method to link prev node to next
         }
+        toRemove.unlinkNext(); // Use unlinkNext method
+        toRemove.unlinkPrev(); // Use unlinkPrev method
+        size--;
     }
-    
-    public String printList() {
-        String allItems = new String();
-        for (playlistNode aNode = head; aNode != null; aNode = aNode.getNext()) {
-            String oneItem = (aNode.getSong()).toString();
-            allItems = allItems + oneItem + ", ";
-        }
-        return allItems;
+
+    public void clear() {
+        head = null;
+        last = null;
+        size = 0;
     }
 }
