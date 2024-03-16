@@ -14,10 +14,10 @@ public interface LinearListInterface {
 
     public int size();
 
-    public Song get(int iIndex);
+    public Song get(int Index);
     
-    public void add(int iIndex, Song inSong);
+    public void add(int Index, Song inSong);
 
-    public void remove(int iIndex);
+    public void remove(int Index);
 
 }
