@@ -16,7 +16,7 @@ public interface LinearListInterface {
 
     public Song get(int Index);
     
-    public void add(int Index, Song inSong);
+    public void add(int Index, Song Song);
 
     public void remove(int Index);
 
