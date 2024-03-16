@@ -14,7 +14,7 @@ public class playlistNode {
     private playlistNode prev;
     
     public playlistNode(Song inSong, playlistNode inNext, playlistNode inPrev){
-        this.song = song;
+        this.song = inSong;
         this.next = inNext;
         this.prev = inPrev;
     }
@@ -41,7 +41,6 @@ public class playlistNode {
 
     public void setSong(Song inSong){
         song = inSong;
-        this.song = inSong;
     }
     
 }

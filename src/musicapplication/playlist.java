@@ -50,10 +50,10 @@ public class playlist implements LinearListInterface{
             last = newNode;
         }else{
             if (iIndex == 1){
-                newNode.setPrev(head);
+                newNode.setNext(head);
                 head.setPrev(newNode);
                 head = newNode;
-            }else if(iIndex == (iSize + 1)){
+            }else if(iIndex == iSize + 1){
                 newNode.setPrev(last);
                 last.setNext(newNode);
                 last = newNode;
@@ -62,7 +62,8 @@ public class playlist implements LinearListInterface{
                 newNode.setNext(current);
                 playlistNode prev = current.getPrev();
                 newNode.setPrev(prev);
-                
+                prev.setNext(newNode);
+                current.setPrev(newNode);
             }
         }
         iSize++;
