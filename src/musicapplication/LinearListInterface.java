@@ -20,6 +20,4 @@ public interface LinearListInterface {
 
     public void remove(int iIndex);
 
-    public String printList();
-
 }
